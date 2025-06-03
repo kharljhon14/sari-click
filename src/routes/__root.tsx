@@ -8,7 +8,6 @@ export const Route = createRootRoute({
     <>
       <MainLayout>
         <Outlet />
-        <div>adasd</div>
       </MainLayout>
       <TanStackRouterDevtools />
     </>
