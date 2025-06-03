@@ -2,6 +2,12 @@ import { Link } from '@tanstack/react-router'
 import { Heart, Search, ShoppingCart, User } from 'lucide-react'
 import { AspectRatio } from './ui/aspect-ratio'
 import { Button } from './ui/button'
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+} from './ui/navigation-menu'
 
 export default function Header() {
   return (
@@ -18,10 +24,30 @@ export default function Header() {
         </Link>
 
         <nav className="flex gap-4">
-          <Link to="/">All</Link>
-          <Link to="/">Today's Deals</Link>
-          <Link to="/">Gift Cards</Link>
-          <Link to="/">Registry & Gifting</Link>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link to="/">All</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link to="/">Today's Deals</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link to="/">Gift Cards</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link to="/">Registry & Gifting</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </nav>
         <div className="ml-auto flex gap-5">
           <Button variant="outline" className="flex items-center gap-2">
