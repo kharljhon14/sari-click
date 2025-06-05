@@ -52,7 +52,7 @@ export default function Hero() {
                   className="object-contain z-10 ml-28 h-[32rem] select-none"
                 />
               </AspectRatio>
-              <div className="absolute bg-white rounded-md flex flex-col gap-2 p-8 w-xs top-32 shadow-lg text-sm text-gray-800">
+              <div className="absolute border bg-zinc-50 shadow-md rounded-md flex flex-col gap-2 p-8 w-xs top-32 text-sm text-gray-800">
                 <h3 className="text-lg font-semibold">Sony Headphone X23</h3>
                 <p className="text-sm text-gray-600">
                   Engineered for performance. Designed for style.
