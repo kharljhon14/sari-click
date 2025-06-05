@@ -1,6 +1,6 @@
-import { Button } from '@/components/ui/button'
 import { Link } from '@tanstack/react-router'
 import { MoveRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function Promos() {
   return (
@@ -58,10 +58,7 @@ export default function Promos() {
             nationwide with real-time tracking and secure packaging.
           </p>
           <Button variant="outline" size="lg" asChild>
-            <Link
-              className="flex gap-2 mt-6 self-end items-center hover:gap-4 transition-all duration-200 w-fit"
-              to="/"
-            >
+            <Link className="flex gap-2 mt-6 self-end items-center" to="/">
               View more <MoveRight />
             </Link>
           </Button>
