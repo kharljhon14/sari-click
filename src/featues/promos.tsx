@@ -1,48 +1,75 @@
+import { Button } from '@/components/ui/button'
 import { Link } from '@tanstack/react-router'
 import { MoveRight } from 'lucide-react'
 
 export default function Promos() {
   return (
-    <div className="flex gap-6">
-      <div className="bg-orange-50 shadow-md flex items-center justify-between p-6 flex-1/2 rounded-md relative overflow-hidden">
-        <div className="flex flex-col gap-y-2">
-          <h2 className="text-2xl">Tech Essentials</h2>
-          <p className="w-md">
-            Gear up with must-have gadgets and accessories — from cables to
-            controllers, all at great prices.
-          </p>
-          <Link
-            className="flex gap-2 mt-6 items-center hover:gap-4 transition-all duration-200 w-fit"
-            to="/"
-          >
-            See more <MoveRight />
-          </Link>
+    <div className=" flex-col flex gap-8">
+      <div className="flex gap-6">
+        <div className="bg-orange-50 shadow-md flex items-center justify-between p-6 flex-1/2 rounded-md relative overflow-hidden">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl">Tech Essentials</h2>
+            <p className="w-md">
+              Gear up with must-have gadgets and accessories — from cables to
+              controllers, all at great prices.
+            </p>
+            <Link
+              className="flex gap-2 mt-6 items-center hover:gap-4 transition-all duration-200 w-fit"
+              to="/"
+            >
+              See more <MoveRight />
+            </Link>
+          </div>
+          <div className="absolute w-72 h-full -right-28 top-0 bottom-0">
+            <img
+              src="/products/controller.png"
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
-        <div className="absolute w-72 h-full -right-28 top-0 bottom-0">
-          <img
-            src="/products/controller.png"
-            className="object-cover w-full h-full"
-          />
+        <div className="bg-orange-50 shadow-md flex items-center justify-between p-6 flex-1/2 rounded-md relative overflow-hidden">
+          <div className="flex flex-col gap-y-2">
+            <h2 className="text-2xl">Deals & Promotions</h2>
+            <p className="w-md">
+              Save big on the latest tech! Exclusive discounts on popular
+              gadgets, limited-time bundles, and more.
+            </p>
+            <Link
+              className="flex gap-2 mt-6 items-center hover:gap-4 transition-all duration-200 w-fit"
+              to="/"
+            >
+              See more <MoveRight />
+            </Link>
+          </div>
+          <div className="absolute w-72 h-full -right-28 top-0 bottom-0">
+            <img
+              src="/products/clock.png"
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
       </div>
-      <div className="bg-orange-50 shadow-md flex items-center justify-between p-6 flex-1/2 rounded-md relative overflow-hidden">
-        <div className="flex flex-col gap-y-2">
-          <h2 className="text-2xl">Deals & Promotions</h2>
+
+      <div className="bg-white shadow-md flex justify-end items-center p-18 rounded-md relative overflow-hidden">
+        <div className="flex flex-col gap-y-2 z-10 bg-gray-100/50 p-6 shadow rounded-md">
+          <h2 className="text-7xl">Fast Delivery</h2>
           <p className="w-md">
-            Save big on the latest tech! Exclusive discounts on popular gadgets,
-            limited-time bundles, and more.
+            Get your tech gear delivered fast and hassle-free. We ship
+            nationwide with real-time tracking and secure packaging.
           </p>
-          <Link
-            className="flex gap-2 mt-6 items-center hover:gap-4 transition-all duration-200 w-fit"
-            to="/"
-          >
-            See more <MoveRight />
-          </Link>
+          <Button variant="outline" size="lg" asChild>
+            <Link
+              className="flex gap-2 mt-6 self-end items-center hover:gap-4 transition-all duration-200 w-fit"
+              to="/"
+            >
+              View more <MoveRight />
+            </Link>
+          </Button>
         </div>
-        <div className="absolute w-72 h-full -right-28 top-0 bottom-0">
+        <div className="absolute h-full w-full flex items-start justify-start">
           <img
-            src="/products/clock.png"
-            className="object-cover w-full h-full"
+            src="/products/dog.png"
+            className="object-contain w-full h-full"
           />
         </div>
       </div>
