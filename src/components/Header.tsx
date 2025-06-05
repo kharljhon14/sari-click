@@ -11,7 +11,7 @@ import {
 
 export default function Header() {
   return (
-    <header className="px-6 py-4 gap-2 bg-white text-black justify-between">
+    <header className="px-6 py-4 gap-2 bg-white text-black shadow-md justify-between rounded-md my-8">
       <div className="flex items-center gap-8">
         <Link className="w-24 flex items-center justify-center" to="/">
           <AspectRatio className="w-24" ratio={2 / 1}>

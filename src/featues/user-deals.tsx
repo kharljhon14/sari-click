@@ -3,7 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function UserDeals() {
   return (
-    <div className="bg-orange-50 p-8 rounded-md flex items-center justify-between gap-8">
+    <div className="bg-white shadow-md p-6 rounded-md flex items-center justify-between gap-8">
       <div className="flex items-center gap-6 flex-1/4">
         <Avatar className="w-20 h-20">
           <AvatarImage src="https://github.com/kharljhon14.png" />
@@ -20,7 +20,7 @@ export default function UserDeals() {
       >
         <img
           src="/products/box.png"
-          className=" object-contain w-36 h-36 select-none pointer-events-none"
+          className=" object-contain w-32 h-32 select-none pointer-events-none"
         />
         <div>
           <p className="text-2xl">Your orders</p>
@@ -34,7 +34,7 @@ export default function UserDeals() {
       >
         <img
           src="/products/gaming-mouse.png"
-          className=" object-contain w-36 h-36 select-none pointer-events-none"
+          className=" object-contain w-32 h-32 select-none pointer-events-none"
         />
         <div>
           <p className="text-2xl">Our Favorites</p>
@@ -48,7 +48,7 @@ export default function UserDeals() {
       >
         <img
           src="/products/pc.png"
-          className=" object-contain w-36 h-36 select-none pointer-events-none"
+          className=" object-contain w-32 h-32 select-none pointer-events-none"
         />
         <div>
           <p className="text-2xl">New Release</p>

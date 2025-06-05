@@ -22,10 +22,11 @@ export default function Hero() {
           delay: 6000,
         }),
       ]}
+      className="shadow-md rounded-md"
     >
       <CarouselContent>
         <CarouselItem>
-          <div className="flex items-center justify-evenly h-[36rem] p-10 rounded-md bg-gray-100">
+          <div className="flex items-center justify-evenly h-[36rem] p-10 rounded-md bg-white">
             <div className="w-full flex flex-col gap-8 p-4">
               <h1 className="font-semibold text-8xl">Upgrade Your Tech Game</h1>
               <p className="text-lg font-montserrat text-gray-700">
@@ -73,7 +74,7 @@ export default function Hero() {
         </CarouselItem>
 
         <CarouselItem>
-          <div className="flex items-center justify-around h-[36rem] p-10 rounded-md bg-gray-50">
+          <div className="flex items-center justify-around h-[36rem] p-10 rounded-md bg-white">
             <div className=" flex flex-col gap-6">
               <h1 className="font-semibold text-7xl leading-tight">
                 Fresh Tech, <br /> Just In
