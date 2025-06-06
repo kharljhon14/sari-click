@@ -22,7 +22,7 @@ export default function Header() {
     <header className="flex lg:block justify-between items-center px-6 py-4 gap-2 bg-white text-black shadow-md rounded-md lg:my-8">
       <div className="flex items-center gap-8">
         <Link className="w-24 flex items-center justify-center" to="/">
-          <AspectRatio className="w-24" ratio={2 / 1}>
+          <AspectRatio className="w-32 lg:w-26" ratio={2 / 1}>
             <img
               src="sariClick.png"
               alt="Sari Click Logo"

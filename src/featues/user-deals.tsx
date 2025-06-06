@@ -3,14 +3,14 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function UserDeals() {
   return (
-    <div className="bg-white shadow-md p-6 rounded-md flex items-center justify-between gap-8">
+    <div className="bg-white shadow-md p-6 rounded-md flex flex-col lg:flex-row   lg:items-center justify-between gap-8">
       <div className="flex items-center gap-6 flex-1/4">
-        <Avatar className="w-20 h-20">
+        <Avatar className=" w-16 h-16 lg:w-20 lg:h-20">
           <AvatarImage src="https://github.com/kharljhon14.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <div>
-          <p className="text-2xl">Hi Karl recommendation for you</p>
+          <p className="text-xl lg:text-2xl">Hi Karl recommendation for you</p>
         </div>
       </div>
 
@@ -20,10 +20,10 @@ export default function UserDeals() {
       >
         <img
           src="/products/box.png"
-          className=" object-contain w-32 h-32 select-none pointer-events-none"
+          className=" object-contain w-20 h-20 lg:w-32 lg:h-32 select-none pointer-events-none"
         />
         <div>
-          <p className="text-2xl">Your orders</p>
+          <p className="text-xl lg:text-2xl">Your orders</p>
           <p className="font-light text-gray-500">View your orders</p>
         </div>
       </Link>
@@ -34,10 +34,10 @@ export default function UserDeals() {
       >
         <img
           src="/products/gaming-mouse.png"
-          className=" object-contain w-32 h-32 select-none pointer-events-none"
+          className=" object-contain w-20 h-20 lg:w-32 lg:h-32 select-none pointer-events-none"
         />
         <div>
-          <p className="text-2xl">Our Favorites</p>
+          <p className="text-xl lg:text-2xl">Our Favorites</p>
           <p className="font-light text-gray-500">Popular items</p>
         </div>
       </Link>
@@ -48,10 +48,10 @@ export default function UserDeals() {
       >
         <img
           src="/products/pc.png"
-          className=" object-contain w-32 h-32 select-none pointer-events-none"
+          className=" object-contain w-20 h-20 lg:w-32 lg:h-32 select-none pointer-events-none"
         />
         <div>
-          <p className="text-2xl">New Release</p>
+          <p className="text-xl lg:text-2xl">New Release</p>
           <p className="font-light text-gray-500">Get 20% Off</p>
         </div>
       </Link>
