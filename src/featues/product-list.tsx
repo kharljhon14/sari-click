@@ -6,15 +6,13 @@ import ProductCard from '@/components/product-card'
 
 interface Props {
   title?: string
+  url: string
 }
 
-export default function ProductList({ title }: Props) {
+export default function ProductList({ title, url }: Props) {
   const { isPending, error, data } = useQuery<{ products: Array<Product> }>({
-    queryKey: ['products'],
-    queryFn: () =>
-      fetch(
-        'https://dummyjson.com/products/category/laptops?limit=6&select=title,price,rating,thumbnail,reviews,brand',
-      ).then((res) => res.json()),
+    queryKey: ['products', url],
+    queryFn: () => fetch(url).then((res) => res.json()),
   })
 
   if (isPending) return 'Loading...'
@@ -32,7 +30,7 @@ export default function ProductList({ title }: Props) {
           View more <MoveRight />
         </Link>
       </div>
-      <div className="flex flex-col lg:flex-row gap-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 grid-auto-flow-row gap-4">
         {data.products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}

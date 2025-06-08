@@ -18,7 +18,16 @@ function App() {
       <UserDeals />
       <Categories />
       <Promos />
-      <ProductList title="Last viewed" />
+
+      <ProductList
+        title="Last viewed"
+        url="https://dummyjson.com/products/category/laptops?limit=5&select=title,price,rating,thumbnail,reviews,brand"
+      />
+
+      <ProductList
+        title="Top Sellers"
+        url="https://dummyjson.com/products/category/mobile-accessories?limit=10&select=title,price,rating,thumbnail,reviews,brand"
+      />
     </>
   )
 }
