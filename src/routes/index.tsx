@@ -5,6 +5,8 @@ import UserDeals from '@/featues/user-deals'
 import Categories from '@/featues/catergories'
 import Promos from '@/featues/promos'
 
+import ProductList from '@/featues/product-list'
+
 export const Route = createFileRoute('/')({
   component: App,
 })
@@ -16,6 +18,7 @@ function App() {
       <UserDeals />
       <Categories />
       <Promos />
+      <ProductList title="Last viewed" />
     </>
   )
 }
